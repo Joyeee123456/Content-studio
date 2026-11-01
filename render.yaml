@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: content-studio
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      - key: LLM_BASE_URL
+        value: https://api.tokenhubcloud.net/v1
+      - key: LLM_MODEL
+        value: gpt-5.5
+      - key: LLM_API_KEY
+        sync: false
+      - key: SOCIALCRAWL_API_KEY
+        sync: false

@@ -1,16 +1,14 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import path from 'path';
 import crypto from 'crypto';
-import { fileURLToPath } from 'url';
 import { sentimentLabels, summarizeCommentLabels, themeLabels } from './comment-stats.js';
 import { validateCommentInsights } from './comment-insights.js';
+import publicFiles from './public-files.js';
 
 dotenv.config();
 const app = express();
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.json({ limit: '1mb' }));
-app.use(express.static(__dirname));
+app.use(publicFiles);
 
 const marketCodes = {
   '美国': 'US',

@@ -2,7 +2,7 @@
 
 ## 本地运行
 
-需要 Node.js 18 或更高版本。
+需要 Node.js 22 或更高版本。
 
 1. 在 TokenHubCloud 获取模型 API Key，并在 SocialCrawl 获取数据 API Key。请勿将 Key 发到聊天或写进网页前端。
 2. 在项目目录复制 `.env.example` 并命名为 `.env`，分别填写 `LLM_API_KEY` 和 `SOCIALCRAWL_API_KEY`。`.env` 已加入 `.gitignore`。
@@ -19,7 +19,15 @@
 
 ## 部署
 
-正式上线需要将网站和 Node.js 后端部署到支持 Node 服务的托管平台，并在平台的环境变量 / Secrets 设置中添加 `LLM_API_KEY`、`LLM_BASE_URL` 和 `LLM_MODEL`。部署平台尚未确定，当前项目可先在本地验证。
+项目已提供 `render.yaml`，将网页和 Node.js 后端部署为同一个 Render Web Service。
+
+1. 打开 [部署此项目](https://dashboard.render.com/select-repo?type=blueprint&repo=https://github.com/Joyeee123456/Content-studio)，登录 Render。
+2. 选择该仓库的 Blueprint，检查方案为 Free，使用仓库里的 `render.yaml`。
+3. 在 Render 的秘密环境变量中填 `LLM_API_KEY` 和 `SOCIALCRAWL_API_KEY`。只在平台中填写，不放进 GitHub 或网页。其它模型配置已在部署文件中提供。
+4. 确认创建，等状态变为 Live。把平台实际生成的 `https://...onrender.com` 地址发给其他人，无需启动你的电脑。
+5. 先验证首页和 `/api/health`。健康接口成功仅代表服务运行且检测到配置，不证明上游模型或采集接口可用；模型网关 HTTP 400 的原因仍需依据真实响应核验。
+
+Free 实例闲置后会休眠，再次访问时可能需要等待唤醒。模型服务和 SocialCrawl 的调用费用独立结算。当前版本适合受控试用，公开发布前请在服务商设置消费限额。后端只提供网页、robots 和 sitemap，源码、Git 文件和环境变量文件不会通过静态路径提供。
 
 ## 自动趋势与评论洞察
 
