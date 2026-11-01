@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Content Studio｜AI出海本土化内容营销助手</title>
+  <meta name="description" content="Content Studio 帮助中国出海商家洞察海外消费者需求、识别文化差异与表达风险，并生成符合目标市场语言习惯和文化语境的本土化营销内容。">
+  <meta name="keywords" content="AI出海营销,海外市场洞察,消费者洞察,文化本地化,跨境电商文案,本土化内容生成,海外社媒营销">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#f6f8fc">
+  <link rel="canonical" href="https://www.example.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Content Studio｜让每一份出海内容，更懂当地消费者">
+  <meta property="og:description" content="从真实市场声音出发，完成消费者洞察、文化适配与本土化内容创作。">
+  <meta property="og:locale" content="zh_CN">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"Content Studio",
+    "applicationCategory":"BusinessApplication",
+    "operatingSystem":"Web",
+    "inLanguage":"zh-CN",
+    "description":"面向中国出海商家的AI本土化内容营销助手，提供海外消费者洞察、文化差异识别和多场景营销内容生成。",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"演示页面，实际价格以正式发布信息为准"}
+  }
+  </script>
+  <style>
+    :root{--ink:#17233d;--muted:#66738b;--blue:#5278dc;--blue2:#8eb6f2;--mint:#a9d9d0;--line:#e6ebf3;--paper:#fff;--bg:#f6f8fc;--navy:#14233f}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+    header{height:76px;display:flex;align-items:center;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid #edf0f5;position:sticky;top:0;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:760;font-size:20px;letter-spacing:-.5px}
+    .logo{width:34px;height:34px;border-radius:12px;background:linear-gradient(145deg,#a9d9d0,#6d91df 72%,#7184c7);display:grid;place-items:center;color:white;font-weight:800;font-size:18px;box-shadow:0 5px 15px #8ea9d544}
+    .navlinks{display:flex;gap:30px;color:#59677e;font-size:14px}.navlinks a:hover{color:var(--blue)}
+    .nav-actions{display:flex;align-items:center;gap:12px}.login{font-size:14px;color:#53627a}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:12px 21px;background:linear-gradient(110deg,#6489e5,#7da9e9);color:white;font-weight:650;font-size:14px;box-shadow:0 8px 22px #6d91df33;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 25px #6d91df44}.btn.secondary{background:white;color:#425675;border:1px solid #dce4f0;box-shadow:none}
+    .hero{padding:82px 0 72px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 80% 12%,#e6efff 0,transparent 37%),radial-gradient(ellipse at 5% 75%,#e9f6f3 0,transparent 34%),#f8faff}
+    .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:48px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:7px 13px;border:1px solid #dfe8f5;background:#ffffffb8;border-radius:30px;color:#5874aa;font-size:12px;font-weight:700;letter-spacing:.5px}
+    .dot{width:7px;height:7px;border-radius:50%;background:#70b8a8;box-shadow:0 0 0 4px #70b8a822}
+    h1{font-size:clamp(38px,5vw,58px);line-height:1.17;letter-spacing:-2px;margin:22px 0 20px;color:#172541}h1 em{font-style:normal;color:#6287d9}
+    .hero-copy{font-size:17px;color:#66738b;max-width:550px;line-height:1.9}.hero-ctas{display:flex;gap:13px;margin:30px 0 25px;flex-wrap:wrap}
+    .micro{font-size:12px;color:#8792a5}.hero-visual{position:relative;min-height:430px;display:grid;place-items:center}
+    .orb{position:absolute;width:390px;height:390px;border-radius:50%;background:linear-gradient(145deg,#e5f3f1,#e8edff 65%,#dce7fb);filter:blur(.2px)}
+    .dash{position:relative;width:min(100%,470px);padding:24px;border:1px solid #ffffff;background:#ffffffd9;backdrop-filter:blur(18px);border-radius:24px;box-shadow:0 28px 70px #344d7c1c;transform:rotate(-1deg)}
+    .dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;font-size:12px;color:#71809a}.status{background:#eaf6f1;color:#438b79;padding:5px 9px;border-radius:20px;font-size:10px}
+    .dash-title{font-weight:750;font-size:17px;margin-bottom:5px}.dash-sub{font-size:11px;color:#8994a7;margin-bottom:17px}
+    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini-card{background:#f7f9fd;border:1px solid #edf1f7;border-radius:13px;padding:13px}.mini-label{font-size:10px;color:#8a96a9}.mini-value{font-size:21px;font-weight:750;color:#31476d;margin:4px 0}.mini-note{font-size:10px;color:#6e9d91}
+    .cloud{margin-top:12px;padding:14px;background:#f8faff;border-radius:13px}.cloud-title{font-size:11px;color:#728099;margin-bottom:9px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{padding:5px 9px;border-radius:20px;background:#eaf0ff;color:#5d78b4;font-size:10px}.tag.green{background:#e7f4f0;color:#4b8e7d}.tag.gold{background:#fbf1df;color:#a27b3f}
+    section{padding:86px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.kicker{color:#6d91d8;font-size:12px;font-weight:750;letter-spacing:1.5px}.section-head h2{font-size:34px;line-height:1.3;letter-spacing:-1px;margin:12px 0}.section-head p{color:var(--muted);margin:0;font-size:15px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:white;border:1px solid var(--line);border-radius:19px;padding:26px;min-height:235px;box-shadow:0 8px 28px #20385d08}.step-no{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#edf2ff;color:#6686d3;font-weight:800}.step:nth-child(2) .step-no{background:#eaf5f1;color:#589b88}.step:nth-child(3) .step-no{background:#f4efff;color:#8d79c6}.step h3{font-size:19px;margin:19px 0 8px}.step p{font-size:13px;color:#738097;margin:0}.step ul{padding-left:17px;color:#62718a;font-size:12px;line-height:2;margin:13px 0 0}
+    .demo-section{background:#eef3fb}.demo-shell{display:grid;grid-template-columns:.82fr 1.18fr;gap:22px;align-items:stretch}.demo-intro{padding:30px 10px}.demo-intro h2{font-size:32px;line-height:1.3;margin:12px 0}.demo-intro p{color:#687790;font-size:14px}.demo-card{background:white;border:1px solid #e3eaf4;border-radius:20px;padding:25px;box-shadow:0 16px 45px #2c47700b}.field-label{display:block;font-size:12px;font-weight:700;color:#53627c;margin:0 0 8px}.field{width:100%;padding:12px 13px;border:1px solid #e1e7f0;border-radius:10px;background:#fbfcfe;color:#31415c;font:inherit;font-size:13px;outline:none}.field:focus{border-color:#8ba8e6;box-shadow:0 0 0 3px #8ba8e622}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:15px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px}.chip{border:1px solid #dce5f2;border-radius:22px;padding:7px 11px;background:white;color:#687994;font-size:11px;cursor:pointer}.chip.active{background:#eaf0ff;border-color:#9bb2eb;color:#4e70bc}.result{margin-top:18px;padding:16px;border-radius:13px;background:#f7f9fd;border:1px solid #e9eef6;display:none}.result.show{display:block}.result h4{margin:0 0 8px;font-size:13px}.result p{margin:0;color:#687790;font-size:12px}.result ul{margin:8px 0 0;padding-left:17px;font-size:12px;color:#596b86}
+    .content-goals{display:grid;grid-template-columns:1fr 1fr;gap:9px 14px;margin:12px 0 20px}.content-goal{display:flex;align-items:center;gap:9px;min-height:38px;color:#53627c;font-size:12px;cursor:pointer}.content-goal input{width:16px;height:16px;margin:0;accent-color:#5278dc;flex:0 0 auto}
+    .comment-stats{margin-top:16px;padding:14px;border:1px solid #dfe8f2;border-radius:10px;background:#fff}.comment-stats[hidden]{display:none}.comment-stats h5{margin:0 0 9px;font-size:12px}.stats-line{display:flex;gap:8px 16px;flex-wrap:wrap;color:#5e6d85;font-size:11px}.stats-groups{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.stats-group strong{display:block;margin-bottom:4px;color:#53627c;font-size:11px}.stats-group ul{margin:0;padding-left:16px;color:#6a7890;font-size:11px}
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.benefit{padding:24px;border-radius:16px;background:white;border:1px solid var(--line)}.benefit-icon{font-size:22px}.benefit h3{margin:12px 0 6px;font-size:17px}.benefit p{margin:0;color:#748097;font-size:13px}
+    .usecases{background:#fff}.use-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.use{border:1px solid var(--line);border-radius:15px;padding:20px;background:#fcfdff}.use strong{display:block;font-size:15px;margin-bottom:7px}.use span{font-size:12px;color:#758199}
+    .faq{max-width:800px;margin:auto}.faq details{padding:19px 0;border-bottom:1px solid var(--line)}.faq summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}.faq summary:after{content:"＋";color:#7292d9}.faq details[open] summary:after{content:"－"}.faq p{font-size:13px;color:#718099;margin:12px 0 0}
+    .cta{padding:66px 0;background:linear-gradient(115deg,#172c50,#344f83);color:white;text-align:center}.cta h2{font-size:32px;margin:0 0 10px}.cta p{color:#c7d2e6;font-size:14px;margin:0 0 24px}
+    footer{padding:30px 0;background:#111f38;color:#aebbd0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:white;font-size:16px}
+    @media(max-width:850px){.navlinks{display:none}.hero-grid,.demo-shell{grid-template-columns:1fr}.hero{padding:60px 0}.hero-visual{min-height:380px}.steps,.benefits{grid-template-columns:1fr}.use-grid{grid-template-columns:1fr 1fr}.section-head h2{font-size:29px}}
+    @media(max-width:520px){.wrap{width:min(100% - 30px,1160px)}header{height:65px}.login{display:none}.hero-visual{min-height:330px}.orb{width:290px;height:290px}.dash{padding:16px}.mini-value{font-size:18px}section{padding:62px 0}.field-row{grid-template-columns:1fr}.use-grid{grid-template-columns:1fr 1fr}.cta h2{font-size:26px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Content Studio 首页"><span class="logo">C</span><span>Content Studio</span></a>
+    <nav class="navlinks" aria-label="主导航">
+      <a href="#workflow">产品能力</a><a href="#demo">体验洞察</a><a href="#scenarios">应用场景</a><a href="#faq">常见问题</a>
+    </nav>
+    <div class="nav-actions"><a class="login" href="#contact">联系团队</a><a class="btn" href="#demo">开始体验</a></div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> 面向中国出海商家的 AI 本土化营销助手</div>
+        <h1>出海内容不止于翻译，<br><em>更要真正读懂当地市场。</em></h1>
+        <p class="hero-copy">从海外社交媒体、电商平台与消费者评论中发现真实需求，理解当地文化与表达偏好，再将洞察转化为更自然、更贴近消费者的品牌内容。</p>
+        <div class="hero-ctas"><a class="btn" href="#demo">体验市场洞察 <span aria-hidden="true">→</span></a><a class="btn secondary" href="#workflow">了解产品能力</a></div>
+        <div class="micro">消费者洞察 · 文化差异识别 · 本土化内容生成</div>
+      </div>
+      <div class="hero-visual" aria-label="市场洞察分析界面示意图">
+        <div class="orb"></div>
+        <div class="dash">
+          <div class="dash-top"><span>MARKET INSIGHT / 美国市场</span><span class="status">分析示意</span></div>
+          <div class="dash-title">消费者需求洞察报告</div><div class="dash-sub">品类：护肤产品　·　数据维度：需求 / 情感 / 表达</div>
+          <div class="mini-grid">
+            <div class="mini-card"><div class="mini-label">高频需求主题</div><div class="mini-value">温和有效</div><div class="mini-note">消费者功能关注点</div></div>
+            <div class="mini-card"><div class="mini-label">情感诉求方向</div><div class="mini-value">安心感</div><div class="mini-note">消费者心理期待</div></div>
+            <div class="mini-card"><div class="mini-label">表达偏好</div><div class="mini-value">真实具体</div><div class="mini-note">避免夸张承诺</div></div>
+            <div class="mini-card"><div class="mini-label">文化适配提醒</div><div class="mini-value">谨慎表述</div><div class="mini-note">结合品类与市场核验</div></div>
+          </div>
+          <div class="cloud"><div class="cloud-title">洞察关键词 · 示例</div><div class="tags"><span class="tag green">gentle care</span><span class="tag">no-fuss routine</span><span class="tag gold">透明成分</span><span class="tag">skin barrier</span><span class="tag green">真实体验</span><span class="tag">everyday comfort</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="workflow">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">FROM INSIGHT TO CONTENT</div><h2>让市场理解，成为内容创作的起点</h2><p>把分散在不同平台的消费者声音，转化为商家能看懂、能筛选、能执行的本土化内容策略。</p></div>
+      <div class="steps">
+        <article class="step"><div class="step-no">01</div><h3>消费者洞察</h3><p>从目标市场的公开社交媒体、电商平台及评论内容中，综合识别消费者在意什么、期待什么、如何表达。</p><ul><li>目标国家与消费者群体分析</li><li>产品功能、情感与审美需求</li><li>趋势话题、流行词与表达偏好</li></ul></article>
+        <article class="step"><div class="step-no">02</div><h3>文化差异识别</h3><p>将市场洞察与品牌资料、产品信息进行对照，发现表达与当地语境之间的差距。</p><ul><li>品牌原始表达分析</li><li>文化认知与消费期待差异</li><li>措辞优化、风险及禁忌提示</li></ul></article>
+        <article class="step"><div class="step-no">03</div><h3>本土化内容创作</h3><p>依据商家选择的需求重点和语言风格，生成适用于不同渠道的营销内容。</p><ul><li>品牌故事与产品介绍</li><li>广告文案与社交媒体内容</li><li>多版本对比与迭代优化</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo-section" id="demo">
+    <div class="wrap demo-shell">
+      <div class="demo-intro"><div class="kicker">CREATE FOR YOUR MARKET</div><h2>选好平台，<br>从市场信号生成内容。</h2><p>填写目标市场和产品资料，系统会自动查找 TikTok 相关趋势标签、视频和公开评论，再结合洞察生成营销内容。</p><p class="micro">TikTok 数据来自 SocialCrawl；采集范围为有限公开样本，不代表全平台。</p></div>
+      <div class="demo-card">
+        <div class="field-row">
+          <div><label class="field-label" for="platform">目标平台</label><select class="field" id="platform"><option value="TikTok">TikTok（TK）</option><option value="Amazon">Amazon</option><option value="Instagram">Instagram</option><option value="YouTube">YouTube</option></select></div>
+          <div><label class="field-label" for="market">目标市场</label><select class="field" id="market"><option>美国</option><option>英国</option><option>德国</option><option>法国</option><option>日本</option><option>加拿大</option></select></div>
+        </div>
+        <div class="field-row">
+          <div><label class="field-label" for="category">产品品类</label><select class="field" id="category"><option>美妆护肤</option><option>宠物用品</option><option>消费电子</option><option>家居生活</option><option>服饰配件</option></select></div>
+          <div><label class="field-label" for="brand">品牌 / 产品信息</label><textarea class="field" id="brand" rows="3" placeholder="例如：主打温和配方的日常护肤精华，面向年轻消费者……"></textarea></div>
+        </div>
+        <label class="field-label">选择要生成的营销内容（可多选）</label>
+        <div class="content-goals" id="content-goals">
+          <label class="content-goal"><input type="checkbox" value="品牌故事生成"><span>品牌故事生成</span></label>
+          <label class="content-goal"><input type="checkbox" value="产品介绍生成" checked><span>产品介绍生成</span></label>
+          <label class="content-goal"><input type="checkbox" value="广告营销文案生成"><span>广告营销文案生成</span></label>
+          <label class="content-goal"><input type="checkbox" value="社交媒体内容生成"><span>社交媒体内容生成</span></label>
+        </div>
+        <div class="comment-stats" style="margin-top:0">
+          <h5 id="data-mode-title">TikTok 自动市场洞察</h5>
+          <p class="micro" id="data-mode-copy">自动查询目标市场的热门标签、相关视频及其公开评论。模型先按你选的消费者需求筛选评论，再把筛选评论和可核对的重复表达用于内容生成。评论会发送给模型服务；未命中缓存时 SocialCrawl 预计最多约 10 credits，模型会额外进行一次评论筛选调用。</p>
+        </div>
+        <label class="field-label">选择你想重点关注的消费者需求</label>
+        <div class="chips" id="chips"><button class="chip active" type="button">功能效果</button><button class="chip" type="button">情感价值</button><button class="chip" type="button">审美风格</button><button class="chip" type="button">流行表达</button><button class="chip" type="button">文化风险</button></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:17px;flex-wrap:wrap"><span class="micro" id="data-source-note">TikTok 自动采集趋势与公开评论，样本量有限</span><button class="btn" id="analyze" type="button">分析市场并生成内容 →</button></div>
+        <div class="result" id="result" aria-live="polite"><h4 id="result-title">TikTok 营销内容初稿</h4><p id="summary"></p><ul id="recommendations"></ul></div>
+        <div class="comment-stats" id="insight-results" aria-live="polite" hidden>
+          <h5>TikTok 趋势与来源</h5>
+          <div class="stats-line" id="insight-overview"></div>
+          <div class="stats-groups">
+            <div class="stats-group"><strong>热门趋势标签</strong><ul id="trend-tags"></ul></div>
+            <div class="stats-group"><strong>相关视频标签</strong><ul id="derived-tags"></ul></div>
+          </div>
+          <ul id="insight-videos" style="margin:10px 0 0;padding-left:16px;color:#6a7890;font-size:11px"></ul>
+        </div>
+        <div class="comment-stats" id="comment-stats" aria-live="polite" hidden>
+          <h5>评论需求筛选与统计</h5>
+          <div class="stats-line" id="stats-overview"></div>
+          <div class="stats-group" style="margin-top:12px"><strong>评论中反复出现的本地表达（至少 2 条评论，且已核对原文）</strong><ul id="stats-phrases"></ul></div>
+          <div class="stats-groups">
+            <div class="stats-group"><strong>情绪标注</strong><ul id="stats-sentiments"></ul></div>
+            <div class="stats-group"><strong>主题标注</strong><ul id="stats-themes"></ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">WHY CONTENT STUDIO</div><h2>不只生成语言，更理解语言背后的市场</h2><p>把消费者声音、品牌定位与文化语境放在同一套分析流程中。</p></div>
+      <div class="benefits">
+        <article class="benefit"><div class="benefit-icon">⌕</div><h3>多平台综合洞察</h3><p>不局限于单一评论或单一渠道，综合观察不同平台中的需求、情绪与表达线索。</p></article>
+        <article class="benefit"><div class="benefit-icon">◇</div><h3>品牌与市场对照</h3><p>把品牌现有说法与当地消费者的理解方式进行比较，明确哪些表达值得保留、调整或验证。</p></article>
+        <article class="benefit"><div class="benefit-icon">✳</div><h3>洞察驱动内容生成</h3><p>先选择目标消费者与沟通风格，再生成对应内容，减少脱离市场语境的泛化文案。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="usecases" id="scenarios">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">BUILT FOR GLOBAL GROWTH</div><h2>覆盖出海品牌的关键内容场景</h2><p>从进入新市场前的理解，到日常营销内容的持续迭代。</p></div>
+      <div class="use-grid">
+        <div class="use"><strong>市场进入前</strong><span>了解目标国家消费者需求与品类表达习惯</span></div>
+        <div class="use"><strong>品牌本土化</strong><span>调整品牌故事、定位语言与价值主张</span></div>
+        <div class="use"><strong>产品上架推广</strong><span>优化产品卖点、详情页与广告措辞</span></div>
+        <div class="use"><strong>社媒内容运营</strong><span>生成贴近当地语境的帖子、短视频脚本与话题</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">FAQ</div><h2>常见问题</h2><p>帮助出海团队快速理解 Content Studio 的工作方式。</p></div>
+      <div class="faq">
+        <details><summary>Content Studio 和普通 AI 文案工具有什么区别？</summary><p>普通文案工具通常从提示词直接生成内容。Content Studio 的产品流程强调先分析目标市场的消费者需求与表达语境，再结合品牌资料识别差异，最后生成内容。实际效果取决于数据来源、分析模型与品牌信息质量。</p></details>
+        <details><summary>它可以分析哪些市场信息？</summary><p>产品规划方向包括目标市场公开社交媒体、电商平台及消费者评论中的需求主题、情感诉求、审美偏好和流行表达。具体平台覆盖范围、数据权限与更新频率应以正式产品能力和平台规则为准。</p></details>
+        <details><summary>能否识别文化禁忌和不合适的表达？</summary><p>系统可辅助标记潜在的文化敏感表达、歧义或不自然措辞，并给出修改建议。文化风险判断需要结合国家、地区、语境与品类进行核验，不应将自动提示视为法律或合规保证。</p></details>
+        <details><summary>生成的内容可以直接发布吗？</summary><p>建议将 AI 输出作为创作初稿，由品牌团队核对产品事实、当地语言、广告合规及平台政策后再发布。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact"><div class="wrap"><h2>让你的品牌，用当地消费者听得懂的方式表达。</h2><p>从市场洞察开始，建立真正适合目标市场的内容策略。</p><a class="btn" href="mailto:hello@example.com">联系产品团队</a></div></section>
+</main>
+
+<footer><div class="wrap foot"><div><strong>Content Studio</strong><div>AI 出海本土化内容营销助手</div></div><div>消费者洞察 · 文化适配 · 内容创作</div><div>© 2026 Content Studio. All rights reserved.</div></div></footer>
+<script>
+  const chips=[...document.querySelectorAll('#chips .chip')];
+  chips.forEach(c=>c.addEventListener('click',()=>c.classList.toggle('active')));
+  const platformSelect=document.getElementById('platform');
+  const updateDataMode=()=>{
+    const isTikTok=platformSelect.value==='TikTok';
+    document.getElementById('data-mode-title').textContent=isTikTok?'TikTok 自动市场洞察':'当前平台暂未接入自动数据';
+    document.getElementById('data-mode-copy').textContent=isTikTok
+      ?'自动查询目标市场的热门标签、相关视频及其公开评论。模型先按你选的消费者需求筛选评论，再把筛选评论和可核对的重复表达用于内容生成。评论会发送给模型服务；未命中缓存时 SocialCrawl 预计最多约 10 credits，模型会额外进行一次评论筛选调用。'
+      :'当前只根据品牌 / 产品资料生成内容，实时趋势和评论自动采集目前仅接入 TikTok。';
+    document.getElementById('data-source-note').textContent=isTikTok
+      ?'TikTok 自动采集趋势与公开评论，样本量有限'
+      :'未连接该平台实时趋势或评论数据';
+  };
+  platformSelect.addEventListener('change',updateDataMode);
+  updateDataMode();
+  document.getElementById('analyze').addEventListener('click', async ()=>{
+    const button=document.getElementById('analyze');
+    const market=document.getElementById('market').value;
+    const platform=document.getElementById('platform').value;
+    const category=document.getElementById('category').value;
+    const brand=document.getElementById('brand').value.trim();
+    const contentTypes=[...document.querySelectorAll('#content-goals input:checked')].map(input=>input.value);
+    const selected=chips.filter(c=>c.classList.contains('active')).map(c=>c.textContent);
+    const focus=selected.length?selected:'综合需求';
+    const result=document.getElementById('result');
+    const summary=document.getElementById('summary');
+    const list=document.getElementById('recommendations');
+    const stats=document.getElementById('comment-stats');
+    const insightResults=document.getElementById('insight-results');
+    document.getElementById('result-title').textContent=platform+' 营销内容初稿';
+    stats.hidden=true;
+    insightResults.hidden=true;
+    if(!brand){
+      result.classList.add('show');
+      summary.textContent='请先填写品牌 / 产品信息。';
+      list.replaceChildren();
+      return;
+    }
+    if(!contentTypes.length){
+      result.classList.add('show');
+      summary.textContent='请至少选择一种要生成的营销内容。';
+      list.replaceChildren();
+      return;
+    }
+    button.disabled=true; button.textContent='正在采集并分析…';
+    result.classList.add('show'); summary.textContent=platform==='TikTok'?'正在查询 TikTok 趋势和评论，按需求筛选后生成内容…':'正在根据产品资料生成所选营销内容…'; list.replaceChildren();
+    try {
+      const response=await fetch('/api/analyze',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({platform,market,category,brand,focus,contentTypes})});
+      const data=await response.json();
+      if(!response.ok) throw new Error(data.error || 'AI 分析请求失败');
+      summary.textContent=data.summary || '分析完成。';
+      (data.recommendations || []).forEach(item=>{const li=document.createElement('li');li.textContent=item;list.appendChild(li)});
+      if(data.caveat){const li=document.createElement('li');li.textContent='数据说明：'+data.caveat;list.appendChild(li)}
+      if(data.insights){
+        const insight=data.insights;
+        const listValues=(id,values,format)=>{const node=document.getElementById(id);node.replaceChildren();values.forEach(value=>{const li=document.createElement('li');li.textContent=format(value);node.appendChild(li)})};
+        document.getElementById('insight-overview').textContent=`来源：${insight.source}；市场：${market}；搜索词：${(insight.queries||[]).join(' / ')}；读取 ${insight.videos.length} 个视频、${insight.commentsFetched} 条评论；本次消耗 ${insight.cached?'0（缓存）':insight.creditsUsed} credits。`;
+        listValues('trend-tags',insight.trendTags||[],item=>`#${item.tag}${item.rank?` · 排名 ${item.rank}`:''}`);
+        listValues('derived-tags',insight.derivedTags||[],item=>`#${item.tag} · ${item.occurrences} 个相关视频`);
+        const videoList=document.getElementById('insight-videos');videoList.replaceChildren();
+        (insight.videos||[]).forEach(video=>{const li=document.createElement('li');const link=document.createElement('a');link.href=video.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=`${video.title||'TikTok 视频'} · ${video.commentCountFetched} 条评论`;li.appendChild(link);videoList.appendChild(li)});
+        if(insight.warnings?.length){const li=document.createElement('li');li.textContent='数据提示：'+insight.warnings.join(' ');list.appendChild(li)}
+        insightResults.hidden=false;
+      }
+      if(data.commentStats){
+        const commentStats=data.commentStats;
+        document.getElementById('stats-overview').textContent=`采集 ${commentStats.inputCount} 条；按关注需求筛选 ${commentStats.selectedCount} 条；AI 已分类 ${commentStats.classifiedCount} 条。`;
+        const phrases=document.getElementById('stats-phrases');phrases.replaceChildren();
+        (commentStats.phrases||[]).forEach(item=>{const li=document.createElement('li');li.textContent=`“${item.phrase}” · ${item.mentions} 条评论`;phrases.appendChild(li)});
+        if(!phrases.childElementCount){const li=document.createElement('li');li.textContent='没有足够重复且可从原文核验的表达';phrases.appendChild(li)}
+        const renderCounts=(target,counts)=>{const node=document.getElementById(target);node.replaceChildren();Object.entries(counts).forEach(([label,count])=>{const share=commentStats.classifiedCount?Math.round(count/commentStats.classifiedCount*100):0;const li=document.createElement('li');li.textContent=`${label}：${count} 条（${share}%）`;node.appendChild(li)})};
+        renderCounts('stats-sentiments',commentStats.sentiments);
+        renderCounts('stats-themes',commentStats.themes);
+        stats.hidden=false;
+      }
+    } catch(error) {
+      summary.textContent='暂时无法完成 AI 分析：'+error.message;
+      if(error.message.includes('LLM_API_KEY')){
+        const li=document.createElement('li');li.textContent='请确认服务器已配置 LLM_API_KEY，并在保存后重启服务。';list.appendChild(li);
+      }
+      if(error.message.includes('SOCIALCRAWL_API_KEY')){
+        const li=document.createElement('li');li.textContent='请确认服务器已配置 SOCIALCRAWL_API_KEY，并在保存后重启服务。';list.appendChild(li);
+      }
+    } finally { button.disabled=false; button.textContent='分析市场并生成内容 →'; }
+  });
+</script>
+</body>
+</html>
